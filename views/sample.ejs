@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="mySimpleApp">
+
+<head>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/javascripts/controller.js"></script>
+    <title>
+        <%=title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div ng-controller="MySimpleController as simple">
+        <p>{{simple.message}}</p>
+        <button ng-click="simple.greet()">click</button>        
+    </div>
+        
+    <h1><%=title %></h1>
+    <p>Welcome to
+        <%=title %>
+    </p>
+</body>
+
+</html>
